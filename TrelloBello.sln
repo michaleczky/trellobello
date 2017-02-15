@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrelloBello", "TrelloBello\TrelloBello.csproj", "{1C5BC0B9-F199-4065-A466-07F1253FB691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrelloBello.Tests", "TrelloBello.Tests\TrelloBello.Tests.csproj", "{B3058627-826E-4C90-B99A-E47B6B3AA8D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7E16782F-89BC-4AB8-9192-125A2FA20EA5}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C5BC0B9-F199-4065-A466-07F1253FB691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5BC0B9-F199-4065-A466-07F1253FB691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5BC0B9-F199-4065-A466-07F1253FB691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5BC0B9-F199-4065-A466-07F1253FB691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3058627-826E-4C90-B99A-E47B6B3AA8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3058627-826E-4C90-B99A-E47B6B3AA8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3058627-826E-4C90-B99A-E47B6B3AA8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3058627-826E-4C90-B99A-E47B6B3AA8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
