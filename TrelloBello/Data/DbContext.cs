@@ -11,7 +11,7 @@ using System.Diagnostics;
 
 namespace TrelloBello.Data
 {
-    internal class DbContext
+    internal class DbContext : IDbContext
     {
         private IMongoClient _client;
         private IMongoDatabase _db;
@@ -25,6 +25,19 @@ namespace TrelloBello.Data
                     _users = _db.GetCollection<Models.User>("user");
                 }
                 return _users;
+            }
+        }
+
+        private IMongoCollection<Models.Github.Payload> _githubPayloads;
+        public IMongoCollection<Models.Github.Payload> GithubPayloads
+        {
+            get
+            {
+                if (_githubPayloads == null)
+                {
+                    _githubPayloads = _db.GetCollection<Models.Github.Payload>("githubpayloads");
+                }
+                return _githubPayloads;
             }
         }
 

@@ -103,11 +103,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\GithubController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Data\DbContext.cs" />
+    <Compile Include="Data\IDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Github\Committer.cs" />
+    <Compile Include="Models\Github\Payload.cs" />
+    <Compile Include="Models\Github\Commit.cs" />
+    <Compile Include="Models\IMongoEntity.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
