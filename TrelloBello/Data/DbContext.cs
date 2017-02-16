@@ -61,7 +61,7 @@ namespace TrelloBello.Data
                 bagColl.InsertOne(seedVers);
                 var user = new Models.User()
                 {
-                    Name = "Peter2",
+                    Name = "Peter3",
                     Email = "peter@domain.com",
                     UserName = "peterm"
                 };
