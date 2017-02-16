@@ -7,6 +7,7 @@ using MongoDB.Bson;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Diagnostics;
 
 namespace TrelloBello.Data
 {
@@ -29,10 +30,11 @@ namespace TrelloBello.Data
 
         public DbContext()
         {
-            var connUri = ConfigurationManager.AppSettings.Get("MONGOLAB_URI");
-            var dbName = ConfigurationManager.AppSettings.Get("DBNAME");
-            _client = new MongoClient(connUri);
-            _db = _client.GetDatabase(dbName);
+            var url = ConfigurationManager.AppSettings.Get("MONGOLAB_URI");
+            var mongoUrl = new MongoUrl(url);
+            Trace.TraceInformation("Connecting to MongoDB at " + mongoUrl.ToString());
+            _client = new MongoClient(mongoUrl);
+            _db = _client.GetDatabase(mongoUrl.DatabaseName);
             SeedWithInitialData();
         }
 
