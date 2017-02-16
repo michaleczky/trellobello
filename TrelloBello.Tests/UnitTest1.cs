@@ -7,8 +7,10 @@ namespace TrelloBello.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMongoDBConnection()
+        [DeploymentItem(@"github_payload.json", "optionalOutFolder")]
+        public void Test_Github_PostPayload()
         {
+            
         }
     }
 }
