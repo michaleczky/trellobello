@@ -7,6 +7,13 @@ namespace TrelloBello.Tests
     public class UnitTest1
     {
         [TestMethod]
+        public void Test_Github_Repository()
+        {
+
+        }
+
+
+        [TestMethod]
         [DeploymentItem(@"github_payload.json", "optionalOutFolder")]
         public void Test_Github_PostPayload()
         {
