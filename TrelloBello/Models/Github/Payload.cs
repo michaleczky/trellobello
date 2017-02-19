@@ -11,7 +11,7 @@ namespace TrelloBello.Models.Github
     {
         [BsonId]
         public ObjectId _Id { get; set; }
-
         public IEnumerable<Commit> Commits { get; set; }
+        public string Ref { get; set; }
     }
 }

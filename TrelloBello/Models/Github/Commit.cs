@@ -13,5 +13,6 @@ namespace TrelloBello.Models.Github
         public string Id { get; set; }
         public string Message { get; set; }
         public Committer Committer { get; set; }
+        public string Url { get; set; }
     }
 }
